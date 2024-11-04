@@ -12077,26 +12077,32 @@ a {
 
 .features-section .images-overlap {
   position: relative;
-  height: 700px;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  background: orange;
 }
 .features-section .images-overlap figure {
   position: absolute;
-  margin: 0;
-  width: 400px;
+  width: 60%;
+  height: 80%;
 }
 .features-section .images-overlap figure img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .features-section .images-overlap figure.image-1 {
   top: 0;
   right: 0;
 }
 .features-section .images-overlap figure.image-2 {
-  top: 60px;
+  bottom: 0;
   left: 0;
-  z-index: -1;
 }
 .features-section .content {
   padding: 15px 15px 0 15px;
@@ -12149,7 +12155,7 @@ a {
 }
 .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption {
   color: #FFFFFF;
-  padding-bottom: calc(35rem / 2 + 6rem);
+  padding-bottom: calc(35rem / 2 + 3rem);
 }
 .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption p {
   font-weight: 400;
