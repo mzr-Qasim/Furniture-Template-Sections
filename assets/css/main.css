@@ -12053,8 +12053,8 @@ a {
   margin-left: 15px;
 }
 .main-navbar .nav-links .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 8px 0;
-  margin: 8px;
+  padding: 0.5rem 0;
+  margin: 0.5rem;
 }
 .main-navbar .nav-links .navbar-nav .nav-link.active, .main-navbar .nav-links .navbar-nav .nav-link.show {
   color: #ff4e20;
@@ -12064,12 +12064,15 @@ a {
 .main-navbar .nav-links ul {
   margin-left: auto;
 }
+.main-navbar .nav-links ul li {
+  padding: 0;
+}
 .main-navbar .nav-links ul li a {
   color: #002a4e;
   font-weight: 500;
 }
 .main-navbar .nav-links ul li a.add-listings {
-  padding: 8px 2rem !important;
+  padding: 0.5rem 2rem !important;
   background-color: #ff4e20;
   color: #FFFFFF;
   text-align: center;

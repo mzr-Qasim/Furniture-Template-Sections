@@ -20,8 +20,8 @@
             }
         }
         .navbar-expand-lg .navbar-nav .nav-link {
-            padding: 8px 0;
-            margin: 8px;
+            padding: 0.5rem 0;
+            margin: 0.5rem;
         }
 
         .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
@@ -32,12 +32,13 @@
         ul{
             margin-left: auto;
             li{
+                padding: 0;
                 a{
                     color: $--secondary-color;
                     font-weight: 500;
                 }
                 a.add-listings{
-                    padding: 8px 2rem!important;
+                    padding: 0.5rem 2rem!important;
                     background-color: $--primary-color;
                     color: $--white-color;
                     text-align: center;
