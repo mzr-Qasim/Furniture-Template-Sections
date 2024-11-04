@@ -29,17 +29,21 @@
             border-bottom: 1px solid;
             border-color: $--primary-color;
         }
-        li{
-            a{
-                color: $--secondary-color;
-                font-weight: 500;
-            }
-            a.add-listings{
-                padding: 8px 2rem!important;
-                background-color: $--primary-color;
-                color: $--white-color;
-                text-align: center;
-            }
+        ul{
+            margin-left: auto;
+            li{
+                a{
+                    color: $--secondary-color;
+                    font-weight: 500;
+                }
+                a.add-listings{
+                    padding: 8px 2rem!important;
+                    background-color: $--primary-color;
+                    color: $--white-color;
+                    text-align: center;
+                }
+    
+            }     
         }
     }
 

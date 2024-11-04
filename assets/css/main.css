@@ -12061,11 +12061,14 @@ a {
   border-bottom: 1px solid;
   border-color: #ff4e20;
 }
-.main-navbar .nav-links li a {
+.main-navbar .nav-links ul {
+  margin-left: auto;
+}
+.main-navbar .nav-links ul li a {
   color: #002a4e;
   font-weight: 500;
 }
-.main-navbar .nav-links li a.add-listings {
+.main-navbar .nav-links ul li a.add-listings {
   padding: 8px 2rem !important;
   background-color: #ff4e20;
   color: #FFFFFF;
@@ -12251,7 +12254,7 @@ a {
 }
 
 @media (max-width: 992px) {
-  .main-navbar .nav-links li a.add-listings {
+  .main-navbar .nav-links ul li a.add-listings {
     padding: 8px 0 !important;
     background-color: transparent;
     text-align: left;
