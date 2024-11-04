@@ -1,15 +1,25 @@
 $services-img-height: 35rem;
 
 
-$--primary-color: #ff4e20;
-$--secondary-color: #002a4e;
-$--secondary-color-2: #eff4f7;
-$--white-color: #FFFFFF;
+$primary-color: #ff4e20;
+$secondary-color: #002a4e;
+$secondary-color-2: #eff4f7;
+$white-color: #FFFFFF;
+
+
+$container-with: 1140px;
 
 body{
     overflow: hidden;
     overflow-y: auto;
     font-family: "Poppins", sans-serif;
+}
+
+
+.partial-container-right{
+    max-width: calc((#{$container-with}) + (50% - (#{$container-with}) / 2));
+    padding: 0 1rem;
+    margin-left: auto;
 }
 
 ul{
@@ -27,9 +37,9 @@ a{
 }
 
 .container{
-    max-width: 1140px;
+    max-width: $container-with;
     &.lg{
-        max-width: 1240px;
+        max-width: calc((#{$container-with}) + 100px);
     }
 }
 
