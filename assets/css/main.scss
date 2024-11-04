@@ -106,7 +106,6 @@
         }
         .section-features{
             .feature_card{
-                cursor: pointer;
                 display: flex;
                 align-items: center;
                 padding: 25px;
@@ -118,12 +117,17 @@
                         box-shadow: none;
                         background-color: $primary-color;
                         color: $white-color;
+
+                        .card_icon{
+                            box-shadow: none;
+                        }
                 }
 
                 
             }
 
             .card_icon{
+                transition: ease-in-out 0.5s;
                 width: 3rem;
                 height: 3rem;
                 border-radius: 50%;
@@ -131,6 +135,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
                 i{
                     font-size: 1.5rem;

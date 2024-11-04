@@ -12141,7 +12141,6 @@ a {
   padding-top: 10px;
 }
 .features-section .content .section-features .feature_card {
-  cursor: pointer;
   display: flex;
   align-items: center;
   padding: 25px;
@@ -12154,7 +12153,11 @@ a {
   background-color: #ff4e20;
   color: #FFFFFF;
 }
+.features-section .content .section-features .feature_card:hover .card_icon {
+  box-shadow: none;
+}
 .features-section .content .section-features .card_icon {
+  transition: ease-in-out 0.5s;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -12162,6 +12165,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .features-section .content .section-features .card_icon i {
   font-size: 1.5rem;
