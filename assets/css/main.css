@@ -12010,6 +12010,7 @@ textarea.form-control-lg {
 body {
   overflow: hidden;
   overflow-y: auto;
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -12018,15 +12019,7 @@ ul {
   padding: 0;
 }
 
-h1, .h1 {
-  margin: 0;
-}
-
-h2, .h2 {
-  margin: 0;
-}
-
-h4, .h4 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, p, figure {
   margin: 0;
 }
 
@@ -12034,33 +12027,30 @@ a {
   text-decoration: none;
 }
 
-p {
-  margin: 0;
+.container {
+  max-width: 1140px;
+}
+.container.lg {
+  max-width: 1240px;
 }
 
-figure {
-  margin: 0;
+.section-space {
+  padding: 6rem 0;
 }
 
-.main-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.section-space-top {
+  padding-top: 6rem;
 }
-.main-navbar .Logo figure {
-  display: flex;
-  align-items: center;
+
+.section-space-bottom {
+  padding-bottom: 6rem;
 }
-.main-navbar .Logo figure img {
+
+.main-navbar .nav-links .navbar-brand img {
   width: 40px;
 }
-.main-navbar .Logo figure figcaption {
+.main-navbar .nav-links .navbar-brand span {
   margin-left: 15px;
-}
-.main-navbar .Logo figure figcaption h4, .main-navbar .Logo figure figcaption .h4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
 }
 .main-navbar .nav-links .navbar-expand-lg .navbar-nav .nav-link {
   padding: 8px 0;
@@ -12073,9 +12063,7 @@ figure {
 }
 .main-navbar .nav-links li a {
   color: #002a4e;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal;
 }
 .main-navbar .nav-links li a.add-listings {
   padding: 8px 2rem !important;
@@ -12084,9 +12072,6 @@ figure {
   text-align: center;
 }
 
-.features-section {
-  margin: 70px 0;
-}
 .features-section .images-overlap {
   position: relative;
   height: 700px;
@@ -12115,15 +12100,11 @@ figure {
 }
 .features-section .content .title p {
   color: #ff4e20;
-  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 20px;
-  font-style: normal;
 }
 .features-section .content .title h2, .features-section .content .title .h2 {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-style: normal;
   padding-top: 10px;
 }
 .features-section .content .section-features .feature {
@@ -12141,24 +12122,12 @@ figure {
   color: #ff4e20;
 }
 .features-section .content .section-features .feature .feature-content h4, .features-section .content .section-features .feature .feature-content .h4 {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
-  font-style: normal;
   padding-bottom: 10px;
 }
 .features-section .content .section-features .feature .feature-content p {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: normal;
-}
-.features-section .content .section-features .feature-2 {
-  background-color: #ff4e20;
-  color: #FFFFFF;
-  box-shadow: none;
-}
-.features-section .content .section-features .feature-2 .icon i {
-  color: #FFFFFF;
 }
 .features-section .content .section-features .feature-3 {
   margin-bottom: 0;
@@ -12176,58 +12145,101 @@ figure {
      object-fit: cover;
 }
 .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption {
-  padding: 20rem 0;
   color: #FFFFFF;
+  padding-bottom: calc(35rem / 2 + 6rem);
 }
 .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption p {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  font-style: normal;
   padding-bottom: 0.5rem;
 }
 .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption h2, .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption .h2 {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-style: normal;
   padding-bottom: 1rem;
 }
-.upcoming-projects-section .Swiper-Section {
+.upcoming-projects-section .swiper-wrapper-main {
   position: absolute;
   left: 0;
   width: 100%;
   transform: translate(0, -50%);
 }
-.upcoming-projects-section .Swiper-Section .swiper-wrapper figure {
-  width: 100%;
-  height: 500px;
+.upcoming-projects-section .swiper-wrapper-main .swiper-slide {
+  background-color: #FFFFFF;
+  padding: 1.5rem;
 }
-.upcoming-projects-section .Swiper-Section .swiper-wrapper figure img {
+.upcoming-projects-section .swiper-wrapper-main figure {
+  width: 100%;
+  height: 35rem;
+}
+.upcoming-projects-section .swiper-wrapper-main figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.upcoming-projects-section .Swiper-Section .swiper-buttons i {
+.upcoming-projects-section .swiper-buttons i {
   font-size: 20px;
   padding: 10px;
   border-radius: 100%;
 }
-.upcoming-projects-section .Swiper-Section .swiper-buttons i.next-button {
+.upcoming-projects-section .swiper-buttons i.next-button {
   color: #FFFFFF;
   background-color: #ff4e20;
 }
-.upcoming-projects-section .Swiper-Section .swiper-buttons i.next-button:hover {
+.upcoming-projects-section .swiper-buttons i.next-button:hover {
   color: #ff4e20;
   background-color: #FFFFFF;
 }
-.upcoming-projects-section .Swiper-Section .swiper-buttons i.previous-button {
+.upcoming-projects-section .swiper-buttons i.previous-button {
   color: #ff4e20;
   background-color: #FFFFFF;
 }
-.upcoming-projects-section .Swiper-Section .swiper-buttons i.previous-button:hover {
+.upcoming-projects-section .swiper-buttons i.previous-button:hover {
   color: #FFFFFF;
   background-color: #ff4e20;
+}
+.upcoming-projects-section .content-wrapper {
+  background-color: #eff4f7;
+  padding: 2rem;
+}
+.upcoming-projects-section .content-wrapper .content-section {
+  margin-bottom: 3rem;
+}
+.upcoming-projects-section .content-wrapper .content-section:nth-child(3) {
+  margin-bottom: 0;
+}
+.upcoming-projects-section .content-wrapper .title p {
+  color: #ff4e20;
+  padding-bottom: 1rem;
+}
+.upcoming-projects-section .content-wrapper .content-lists ul li {
+  padding: 1.2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.upcoming-projects-section .content-wrapper .content-lists ul li:nth-child(1) {
+  padding-top: 0;
+}
+.upcoming-projects-section .content-wrapper .content-lists ul li:nth-child(5) {
+  padding-bottom: 0;
+}
+.upcoming-projects-section .content-wrapper .content-lists ul li span {
+  font-size: 0.8rem;
+}
+.upcoming-projects-section .content-wrapper .brochure a.download-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem;
+  color: #FFFFFF;
+  background-color: #ff4e20;
+  font-size: 1rem;
+}
+.upcoming-projects-section .content-wrapper .brochure a.download-link span {
+  margin-left: 0.5rem;
+}
+.upcoming-projects-section .content-wrapper .brochure a.download-link span i {
+  font-size: 1.5rem;
 }
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
@@ -12244,5 +12256,14 @@ figure {
     background-color: transparent;
     text-align: left;
     color: #002a4e;
+  }
+}
+@media (max-width: 767px) {
+  .upcoming-projects-section .upcoming-projects-sectin-wrapper figure img {
+    position: static !important;
+  }
+  .upcoming-projects-section .swiper-slide {
+    background-color: transparent !important;
+    padding: 0 !important;
   }
 }/*# sourceMappingURL=main.css.map */

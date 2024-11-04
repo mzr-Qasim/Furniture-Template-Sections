@@ -1,6 +1,15 @@
+$services-img-height: 35rem;
+
+
+$--primary-color: #ff4e20;
+$--secondary-color: #002a4e;
+$--secondary-color-2: #eff4f7;
+$--white-color: #FFFFFF;
+
 body{
     overflow: hidden;
     overflow-y: auto;
+    font-family: "Poppins", sans-serif;
 }
 
 ul{
@@ -9,29 +18,28 @@ ul{
     padding: 0;
 }
 
-h1{
+h1, h2, h3, h4, p, figure{
     margin: 0;
 }
-
-h2{
-    margin: 0;
-}
-
-h4{
-    margin: 0;
-}
-
 
 a{
     text-decoration: none;
 }
 
-
-p{
-    margin: 0;
+.container{
+    max-width: 1140px;
+    &.lg{
+        max-width: 1240px;
+    }
 }
 
-
-figure{
-    margin: 0;
+.section-space{
+    padding: 6rem 0;
 }
+.section-space-top{
+    padding-top: 6rem;
+}
+.section-space-bottom{
+    padding-bottom: 6rem;
+}
+
