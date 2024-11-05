@@ -38,7 +38,7 @@
                     font-weight: 500;
                 }
                 a.add-listings{
-                    padding: 0.5rem 2rem!important;
+                    padding: 0.5rem 1rem!important;
                     background-color: $primary-color;
                     color: $white-color;
                     text-align: center;
@@ -50,7 +50,75 @@
 
 }
     
+.main-hero-section{
+    background-color: $secondary-color-2;
 
+
+    .content-inner{
+
+        .content{
+
+            .title{
+                h1{
+                    span{
+                        color: $primary-color;
+                    }
+                }
+                p{
+                    padding: 1.5rem 0;
+                }
+        
+            }
+    
+            .button{
+                display: flex;
+                align-items: center;
+                a{
+                    transition: ease-in-out 0.3s;
+                }
+    
+                a.button{
+                    color: $white-color;
+                    background-color: $primary-color;
+                    padding:0.5rem 1rem;
+    
+    
+                    &:hover{
+                        background-color: $secondary-color;
+                        color: $white-color;
+                    }
+    
+                }
+                span{
+                    margin-left: 2rem;
+                    i{  
+                        font-size: 2rem;
+                        color: $primary-color;
+    
+                        &:hover{
+                            color: $secondary-color
+                        }
+                    }
+                }
+            }
+
+
+      
+        }
+    }
+
+
+        figure{
+
+            img{
+                width: 100%;
+                height: 400px;
+                min-height: 200px;
+                object-fit: cover;
+            }
+        }
+    
+}
    
 
 
@@ -170,6 +238,17 @@
 .upcoming-projects-section{
     .upcoming-projects-sectin-wrapper{
         position: relative;
+        height: 100%;
+
+        .figcaption-inner{
+            position: relative;
+        }
+
+        .swiper-controlers{
+            position: absolute;
+            top: 50%;
+            right: 15%;
+        }
 
         figure{
             img{
@@ -180,7 +259,7 @@
                 object-fit: cover;
             }
             figcaption{
-                color: $white-color;
+                color: red;
                 padding-bottom: calc((#{$services-img-height} / 2) + 6rem);
                 p{
 
@@ -191,6 +270,9 @@
                 h2{
                     font-weight: 600;
                     padding-bottom: 1rem;
+                }
+                .no-bottom-padding{
+                    padding-bottom: 0;
                 }
 
             }
@@ -305,16 +387,31 @@
     
     }
 
-
-
-
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-    display: none
+.swiper-buttons:after{
+    font-family: 'icomoon';
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1rem;
 }
 
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-    display: none
+
+.swiper-button-prev:after {
+    content: '\ea3c';
+    color: $primary-color;
+    background-color: $white-color;
 }
+
+.swiper-button-next:after {
+    content: '\ea40';
+    color: $white-color;
+    background-color: $primary-color;
+}
+
+
+
 
 
 

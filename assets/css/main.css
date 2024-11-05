@@ -12016,7 +12016,7 @@ body {
 
 .partial-container-right {
   max-width: calc((1140px) + 50% - (1140px) / 2);
-  padding: 0 1rem;
+  padding-left: 1rem;
   margin-left: auto;
 }
 
@@ -12093,10 +12093,53 @@ a {
   font-weight: 500;
 }
 .main-navbar .nav-links ul li a.add-listings {
-  padding: 0.5rem 2rem !important;
+  padding: 0.5rem 1rem !important;
   background-color: #ff4e20;
   color: #FFFFFF;
   text-align: center;
+}
+
+.main-hero-section {
+  background-color: #eff4f7;
+}
+.main-hero-section .content-inner .content .title h1 span, .main-hero-section .content-inner .content .title .h1 span {
+  color: #ff4e20;
+}
+.main-hero-section .content-inner .content .title p {
+  padding: 1.5rem 0;
+}
+.main-hero-section .content-inner .content .button {
+  display: flex;
+  align-items: center;
+}
+.main-hero-section .content-inner .content .button a {
+  transition: ease-in-out 0.3s;
+}
+.main-hero-section .content-inner .content .button a.button {
+  color: #FFFFFF;
+  background-color: #ff4e20;
+  padding: 0.5rem 1rem;
+}
+.main-hero-section .content-inner .content .button a.button:hover {
+  background-color: #002a4e;
+  color: #FFFFFF;
+}
+.main-hero-section .content-inner .content .button span {
+  margin-left: 2rem;
+}
+.main-hero-section .content-inner .content .button span i {
+  font-size: 2rem;
+  color: #ff4e20;
+}
+.main-hero-section .content-inner .content .button span i:hover {
+  color: #002a4e;
+}
+.main-hero-section figure img {
+  width: 100%;
+  height: 400px;
+  min-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .features-section .images-overlap {
@@ -12186,6 +12229,15 @@ a {
 
 .upcoming-projects-section .upcoming-projects-sectin-wrapper {
   position: relative;
+  height: 100%;
+}
+.upcoming-projects-section .upcoming-projects-sectin-wrapper .figcaption-inner {
+  position: relative;
+}
+.upcoming-projects-section .upcoming-projects-sectin-wrapper .swiper-controlers {
+  position: absolute;
+  top: 50%;
+  right: 15%;
 }
 .upcoming-projects-section .upcoming-projects-sectin-wrapper figure img {
   width: 100%;
@@ -12196,7 +12248,7 @@ a {
      object-fit: cover;
 }
 .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption {
-  color: #FFFFFF;
+  color: red;
   padding-bottom: calc(35rem / 2 + 6rem);
 }
 .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption p {
@@ -12207,6 +12259,9 @@ a {
 .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption h2, .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption .h2 {
   font-weight: 600;
   padding-bottom: 1rem;
+}
+.upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption .no-bottom-padding {
+  padding-bottom: 0;
 }
 .upcoming-projects-section .swiper-wrapper-main {
   position: absolute;
@@ -12293,12 +12348,26 @@ a {
   font-size: 1.5rem;
 }
 
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-  display: none;
+.swiper-buttons:after {
+  font-family: "icomoon";
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1rem;
 }
 
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-  display: none;
+.swiper-button-prev:after {
+  content: "\ea3c";
+  color: #ff4e20;
+  background-color: #FFFFFF;
+}
+
+.swiper-button-next:after {
+  content: "\ea40";
+  color: #FFFFFF;
+  background-color: #ff4e20;
 }
 
 @media (max-width: 992px) {
