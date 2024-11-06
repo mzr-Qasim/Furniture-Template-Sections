@@ -12070,6 +12070,20 @@ a {
     padding: 0 !important;
   }
 }
+@media (max-width: 992px) {
+  .hero-section-inner {
+    display: block;
+  }
+  .left-section {
+    width: 100%;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  .right-section {
+    width: 100%;
+  }
+}
 .main-navbar .nav-links .navbar-brand img {
   width: 40px;
 }
@@ -12099,45 +12113,45 @@ a {
   text-align: center;
 }
 
-.main-hero-section {
+.hero-section-wrapper {
   background-color: #eff4f7;
 }
-.main-hero-section .content-inner .content .title h1 span, .main-hero-section .content-inner .content .title .h1 span {
-  color: #ff4e20;
-}
-.main-hero-section .content-inner .content .title p {
-  padding: 1.5rem 0;
-}
-.main-hero-section .content-inner .content .button {
+
+.hero-section-inner {
   display: flex;
   align-items: center;
 }
-.main-hero-section .content-inner .content .button a {
-  transition: ease-in-out 0.3s;
+
+.left-section {
+  width: 50%;
 }
-.main-hero-section .content-inner .content .button a.button {
+
+.content {
+  color: #000000;
+}
+.content h1 span, .content .h1 span {
+  color: #ff4e20;
+}
+.content p {
+  padding: 1.5rem 0;
+}
+.content a {
   color: #FFFFFF;
   background-color: #ff4e20;
   padding: 0.5rem 1rem;
+  transition: ease-in-out 0.3s;
 }
-.main-hero-section .content-inner .content .button a.button:hover {
+.content a:hover {
   background-color: #002a4e;
-  color: #FFFFFF;
 }
-.main-hero-section .content-inner .content .button span {
-  margin-left: 2rem;
+
+.right-section {
+  width: 50%;
 }
-.main-hero-section .content-inner .content .button span i {
-  font-size: 2rem;
-  color: #ff4e20;
-}
-.main-hero-section .content-inner .content .button span i:hover {
-  color: #002a4e;
-}
-.main-hero-section figure img {
+.right-section figure img {
+  min-height: 400px;
+  height: 100%;
   width: 100%;
-  height: 400px;
-  min-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -12248,7 +12262,7 @@ a {
      object-fit: cover;
 }
 .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption {
-  color: red;
+  color: #FFFFFF;
   padding-bottom: calc(35rem / 2 + 6rem);
 }
 .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption p {
@@ -12335,7 +12349,6 @@ a {
 }
 .upcoming-projects-section .content-wrapper .brochure a.download-link {
   display: inline-flex;
-  align-items: center;
   padding: 0.8rem;
   color: #FFFFFF;
   background-color: #ff4e20;
@@ -12385,5 +12398,19 @@ a {
   .upcoming-projects-section .swiper-slide {
     background-color: transparent !important;
     padding: 0 !important;
+  }
+}
+@media (max-width: 992px) {
+  .hero-section-inner {
+    display: block;
+  }
+  .left-section {
+    width: 100%;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  .right-section {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -43,3 +43,20 @@
 }
 
 
+
+
+
+@media (max-width: 992px){
+    .hero-section-inner{
+        display: block;
+    }
+    .left-section{
+        width: 100%; 
+        padding: 5rem 0;  
+        display: flex;
+        justify-content: center;
+    }
+    .right-section{
+        width: 100%;
+    }
+}
