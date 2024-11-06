@@ -12060,17 +12060,6 @@ a {
     text-align: left;
     color: #002a4e;
   }
-}
-@media (max-width: 767px) {
-  .upcoming-projects-section .upcoming-projects-sectin-wrapper figure img {
-    position: static !important;
-  }
-  .upcoming-projects-section .swiper-slide {
-    background-color: transparent !important;
-    padding: 0 !important;
-  }
-}
-@media (max-width: 992px) {
   .hero-section-inner {
     display: block;
   }
@@ -12082,6 +12071,25 @@ a {
   }
   .right-section {
     width: 100%;
+  }
+  .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption {
+    padding-bottom: 0;
+    padding: 10rem 0;
+  }
+  .swiper-wrapper-main {
+    position: static !important;
+    transform: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .upcoming-projects-section .swiper-controlers {
+    margin-top: 3rem;
+    right: 88% !important;
+    top: 100% !important;
+  }
+  .upcoming-projects-section .swiper-slide {
+    background-color: transparent !important;
+    padding: 0 !important;
   }
 }
 .main-navbar .nav-links .navbar-brand img {
@@ -12125,23 +12133,22 @@ a {
 .left-section {
   width: 50%;
 }
-
-.content {
+.left-section .content {
   color: #000000;
 }
-.content h1 span, .content .h1 span {
+.left-section .content h1 span, .left-section .content .h1 span {
   color: #ff4e20;
 }
-.content p {
+.left-section .content p {
   padding: 1.5rem 0;
 }
-.content a {
+.left-section .content a {
   color: #FFFFFF;
   background-color: #ff4e20;
   padding: 0.5rem 1rem;
   transition: ease-in-out 0.3s;
 }
-.content a:hover {
+.left-section .content a:hover {
   background-color: #002a4e;
 }
 
@@ -12149,8 +12156,7 @@ a {
   width: 50%;
 }
 .right-section figure img {
-  min-height: 400px;
-  height: 100%;
+  height: auto;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -12164,8 +12170,8 @@ a {
 }
 .features-section .images-overlap figure {
   position: absolute;
-  width: 60%;
-  height: 80%;
+  width: 70%;
+  height: 90%;
 }
 .features-section .images-overlap figure img {
   width: 100%;
@@ -12200,7 +12206,7 @@ a {
 .features-section .content .section-features .feature_card {
   display: flex;
   align-items: center;
-  padding: 25px;
+  padding: 1.2rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   transition: ease-in-out 0.5s;
   margin-top: 30px;
@@ -12251,7 +12257,7 @@ a {
 .upcoming-projects-section .upcoming-projects-sectin-wrapper .swiper-controlers {
   position: absolute;
   top: 50%;
-  right: 15%;
+  right: 10%;
 }
 .upcoming-projects-section .upcoming-projects-sectin-wrapper figure img {
   width: 100%;
@@ -12390,17 +12396,6 @@ a {
     text-align: left;
     color: #002a4e;
   }
-}
-@media (max-width: 767px) {
-  .upcoming-projects-section .upcoming-projects-sectin-wrapper figure img {
-    position: static !important;
-  }
-  .upcoming-projects-section .swiper-slide {
-    background-color: transparent !important;
-    padding: 0 !important;
-  }
-}
-@media (max-width: 992px) {
   .hero-section-inner {
     display: block;
   }
@@ -12412,5 +12407,24 @@ a {
   }
   .right-section {
     width: 100%;
+  }
+  .upcoming-projects-section .upcoming-projects-sectin-wrapper figure figcaption {
+    padding-bottom: 0;
+    padding: 10rem 0;
+  }
+  .swiper-wrapper-main {
+    position: static !important;
+    transform: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .upcoming-projects-section .swiper-controlers {
+    margin-top: 3rem;
+    right: 88% !important;
+    top: 100% !important;
+  }
+  .upcoming-projects-section .swiper-slide {
+    background-color: transparent !important;
+    padding: 0 !important;
   }
 }/*# sourceMappingURL=main.css.map */

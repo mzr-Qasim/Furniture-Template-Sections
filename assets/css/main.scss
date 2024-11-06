@@ -57,40 +57,41 @@
 .hero-section-inner{
     display: flex;
     align-items: center;
+
 }
 
 .left-section{
     width: 50%;
+    .content{
+        color: $black-color;
+        h1{
+            span{
+                color: $primary-color;
+            }
+        }
+        p{
+            padding: 1.5rem 0;
+        }
+        a{
+            color: $white-color;
+            background-color: $primary-color;
+            padding: 0.5rem 1rem;
+            transition: ease-in-out 0.3s;
+            &:hover{
+                background-color: $secondary-color;
+            }
+        }
+    }
 }
 
-.content{
-    color: $black-color;
-    h1{
-        span{
-            color: $primary-color;
-        }
-    }
-    p{
-        padding: 1.5rem 0;
-    }
-    a{
-        color: $white-color;
-        background-color: $primary-color;
-        padding: 0.5rem 1rem;
-        transition: ease-in-out 0.3s;
-        &:hover{
-            background-color: $secondary-color;
-        }
-    }
-}
+
 
 .right-section{
     width: 50%;
 
     figure{
         img{
-            min-height: 400px;
-            height: 100%;
+            height: auto;
             width: 100%;
             object-fit: cover;
         }
@@ -111,8 +112,8 @@
 
         figure{
             position: absolute;
-            width: 60%;
-            height: 80%;
+            width: 70%;
+            height: 90%;
 
             img{
                 width: 100%;
@@ -154,7 +155,7 @@
             .feature_card{
                 display: flex;
                 align-items: center;
-                padding: 25px;
+                padding: 1.2rem;
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
                 transition: ease-in-out 0.5s;
                 margin-top: 30px;
@@ -225,7 +226,7 @@
         .swiper-controlers{
             position: absolute;
             top: 50%;
-            right: 15%;
+            right: 10%;
         }
 
         figure{
@@ -347,7 +348,7 @@
             }
             .brochure{
                 a.download-link{   
-                    display: inline-flex;            
+                    display: inline-flex;          
                     padding: 0.8rem;
                     color: $white-color;
                     background-color: $primary-color;
@@ -381,7 +382,10 @@
     content: '\ea3c';
     color: $primary-color;
     background-color: $white-color;
+
 }
+
+
 
 .swiper-button-next:after {
     content: '\ea40';
